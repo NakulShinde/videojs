@@ -1,0 +1,17 @@
+<video id="example-video" width="600" height="400" class="video-js vjs-default-skin" controls>
+  <source src="http://127.0.0.1:80/output_final1/manifest.mpd" type="application/dash+xml">
+</video>
+<script src="video.js"></script>
+
+<!-- Dash.js -->
+<script src="dash.all.js"></script>
+
+<!-- videojs-contrib-dash stylesheet -->
+<link rel="stylesheet" href="video-js.min.css"></link>
+<!-- videojs-contrib-dash script -->
+<script src="videojs-dash.min.js"></script>
+
+<script>
+	var player = videojs('example-video');
+	player.play();
+</script>
